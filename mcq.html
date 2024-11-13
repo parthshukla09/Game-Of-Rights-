@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Based Quiz</title>
+    <link rel="stylesheet" href="mcq.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="image-container">
+            <img id="question-image" src="" alt="Question Image">
+        </div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options-container"></div>
+        </div>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="score-container" style="display: none;">
+        <p id="score"></p>
+        <button onclick="location.reload()">Restart Quiz</button>
+    </div>
+    <script src="mcq.js"></script>
+</body>
+</html>

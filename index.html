@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Of Rights!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="Preamble" onclick="showPreamble()" class="animated fadeIn" style="animation-delay:2.2s;">Preamble</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">SignIn/Login</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Game Of Rights!
+        </h1>
+        <h2>Legislative / Executive / Judiciary</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showPreamble()">Preamble</a>
+            <a href="signup.html"onclick="showcontact()">SignIn/Login</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="Preamble_container" class="container">
+        <div onclick="closePreamble()"><i class="fas fa-angle-right"></i></div>
+        <h1>Preamble</h1>
+        <section>
+            <h2>Preamble title</h2>
+            <p>
+                Preamble
+                WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:
+                
+                JUSTICE, social, economic and political;
+                
+                LIBERTY of thought, expression, belief, faith and worship;
+                
+                EQUALITY of status and of opportunity;
+                
+                and to promote among them all
+                
+                FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;
+                
+                IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.
+                
+                
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Legislative</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Executive</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Judiciary</div>
+            </div>
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2></h2>
+                <p>
+
+                    Welcome to "GameOfRights," an innovative digital solution designed to promote constitutional literacy among Indian citizens. Our platform transforms the complex language of the Indian Constitution into simple, engaging, and interactive games focused on the three main branches: the Legislature, the Executive, and the Judiciary. By simplifying key Articles of the Constitution, especially from Parts V and VI, we aim to make this important document accessible to all, regardless of educational background.
+
+                    Our platform offers a variety of game formats like Spin the Wheel, Card Games, Board Games, and more, ensuring that learning is fun and inclusive. With multi-language support and rich multimedia elements, "Institutions and Constitution" is designed to reach a wide audience, including children and youth.
+                    
+                    Through this platform, we aspire to increase awareness and understanding of citizens' rights and duties, empowering users to make informed decisions. Join us in this important journey to build a more constitutionally aware society.
+                </p>
+            
+
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+             <br>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

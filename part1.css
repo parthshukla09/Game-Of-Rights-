@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Content Container */
+.content {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Subheadings */
+h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* List Items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Nested List Styling */
+ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+/* Link Styling */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
